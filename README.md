@@ -11,8 +11,8 @@ O desafio consiste em propor uma modelagem de dados para a base de um E-Commerce
 
 Para a resolução do desafio, optou-se por seguir uma abordagem mais simples, utilizando de ferramentas abertas. Sendo elas:
 
- - Google Collab Notebooks[https://colab.research.google.com/], para a construção do código do pipeline de dados, utilizando Pyspark.
- - App Diagrams[https://app.diagrams.net]
+ - [Google Collab Notebooks](https://colab.research.google.com/), para a construção do código do pipeline de dados, utilizando Pyspark.
+ - [App Diagrams](https://app.diagrams.net)
 
 
  ## Solução:
@@ -88,3 +88,5 @@ Foram utilizadas também surrogate keys nas tabelas dimensionais, como id_produt
 Para a construção do pipeline, toda a lógica foi implementada em um único notebook, com o objetivo de facilitar o processo de avaliação. Embora, em um ambiente produtivo, as etapas fossem separadas seguindo a arquitetura em camadas (bronze, silver e gold), a centralização da lógica neste caso favorece a visualização completa do fluxo em um só lugar. Além disso, o notebook contém diversos comentários e comandos de depuração, como `display()`, que foram mantidos intencionalmente para facilitar a análise dos dados intermediários, permitindo que os resultados sejam visualizados diretamente, sem a necessidade de executar novamente os blocos.
 
 Também foi adotado um padrão de nomenclatura em português para os nomes das colunas, com o objetivo de manter consistência e clareza ao longo de todo o processo. Ao final do notebook, são incluídas algumas consultas escritas em SQL, utilizadas apenas para fins ilustrativos, demonstrando outra forma de explorar os dados transformados. Por fim, comandos como `write()` estão presentes apenas de forma demonstrativa, sem executar a escrita de fato, com a intenção de exemplificar como a persistência dos dados poderia ser realizada, incluindo sugestões de particionamento.
+
+O notebook por der encontrado aqui: [Notebook](https://github.com/gabrielsribe/Liven-tech/blob/main/notebook/Liven_Tech.ipynb) .
