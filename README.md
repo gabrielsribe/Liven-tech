@@ -45,7 +45,6 @@ Permite análises de:
 
 - Faturamento por categoria/produto/vendedor
 - Performance de canais de venda
-- Eficiência logística (prazos, fretes)
 
 `FATO_AVALIACOES`
 
@@ -56,8 +55,6 @@ Permite análises de:
 
 - Satisfação por segmento de clientes
 - Correlação entre volume de compras e avaliações
-- Identificação de clientes valiosos (alto volume + alta satisfação)
-- Atende ao requisito de "Avaliações de Produtos"
 
 
 Vantagens dessa separação:
@@ -84,7 +81,7 @@ Estrutura das Tabelas de Dimensão:
 
 Foi aplicada uma desnormalização nas tabelas de origem, de modo que cada tabela de dimensão contém todos os atributos necessários para as análises, evitando a necessidade de joins complexos durante as consultas. Por exemplo, a dimensão de clientes (`DIM_CLIENTE`) já inclui informações como cidade e estado, permitindo filtragens diretas por localização.
 
-Foram utilizadas também surrogate keys nas tabelas dimensionais, como id_produto e id_cliente, representadas por inteiros sequenciais em vez de identificadores naturais como SKUs ou CPFs. Essa abordagem traz vantagens como melhor performance em operações de join, por serem inteiros, além de oferecer isolamento em relação a mudanças nos sistemas de origem.
+Foram utilizadas também surrogate keys nas tabelas dimensionais, como id_produto e id_cliente. Essa abordagem pode trazer vantagens como melhor performance em operações de join.
 
 ## Pipeline de dados
 
