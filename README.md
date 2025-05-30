@@ -28,7 +28,8 @@ Para a resolução do desafio, optou-se por seguir uma abordagem mais simples, u
 - Filtros: data da avaliação, cliente, estado do cliente
 
 Para isso, após analise do schema disponilizado, propoem-se a seguinte estrutura de dados:
-![alt text](diagrams/schema.png?raw=true "Schema")
+
+![alt text](diagrams/schema-liven.png?raw=true "Schema")
 
 A seguir, será detalhada a lógica por trás de cada decisão tomada na modelagem dimensional.
 
